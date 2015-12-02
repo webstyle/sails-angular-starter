@@ -1,0 +1,141 @@
+.vertical-align {
+  position: relative;
+  top: 50%;
+  @include transform(translateY(-50%));
+}
+
+.has-no-margin {
+  margin: 0 !important;
+}
+
+.has-no-padding {
+  padding: 0 !important;
+}
+
+.clear-both {
+  clear: both !important;
+}
+
+.bg-white {
+  background-color:white;
+}
+
+.bg-grey {
+  background-color:$bg-grey;
+}
+
+.no-bg-color {
+  background-color: transparent !important;
+}
+
+.is-inline {
+  display: inline;
+}
+
+.is-inline-block {
+  display: inline-block !important;
+}
+
+.is-block {
+  display: block;
+}
+
+.vertical-top {
+  vertical-align: top;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.pull-center {
+  right: 50%;
+  left: auto;
+  margin-right: -90px;
+}
+
+.is-relative {
+  position: relative;
+}
+
+.is-absolute {
+  position: absolute;
+}
+
+.is-pointer {
+  cursor: pointer;
+}
+
+.is-link {
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.is-underline {
+  text-decoration: underline;
+}
+
+.left-full {
+  float: left;
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
+.word-wrap {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.is-white {
+  color: white;
+}
+
+.is-light-green {
+  color: $light-red !important;
+}
+
+a.is-white:hover {
+  color: white;
+}
+
+.no-list{
+  list-style:none;
+}
+
+.is-uppercase {
+  text-transform: uppercase;
+}
+
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.no-user-select {
+  @include user-select(none);
+}

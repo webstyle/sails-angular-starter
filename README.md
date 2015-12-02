@@ -13,4 +13,7 @@ npm install
 bower install
 ```
 
-
+## todo
+- create uploads/media directory automatically
+- automatic create admin user on first run
+- create mocha test sets

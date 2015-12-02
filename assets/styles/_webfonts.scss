@@ -1,0 +1,47 @@
+@mixin font-core {
+  font-family: 'Helvetic Neue', Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-core-thin {
+  font-family: 'Helvetic Neue', Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-core-light {
+  font-family: 'Helvetic Neue', Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-core-bold {
+  font-family: 'Helvetic Neue', Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-admin {
+  font-family: 'Source Sans Pro', sans;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-admin-thin {
+  font-family: 'Source Sans Pro', sans;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-admin-light {
+  font-family: 'Source Sans Pro', sans;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font-admin-bold {
+  font-family: 'Montserrat', sans;
+  font-weight: normal;
+  font-style: normal;
+}

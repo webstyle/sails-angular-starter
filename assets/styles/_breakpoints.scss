@@ -1,0 +1,48 @@
+@mixin breakpoint($point) {
+  @if $point == x-large {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
+  @if $point == not-large {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $point == large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @if $point == not-medium {
+    @media (min-width: 993px) {
+      @content;
+    }
+  }
+  @if $point == medium {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+  @if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $point == mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @else {
+    @media ($point) {
+      @content;
+    }
+  }
+}
+
+@mixin between-breakpoints($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
