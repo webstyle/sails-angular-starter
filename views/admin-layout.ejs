@@ -32,23 +32,19 @@
   <![endif]-->
 </head>
 <body>
+<!-- angular view -->
+<body ng-app="AdminApp" ng-controller="MainCtrl">
+<!-- angular view -->
+<div class="angular-view" ng-view></div>
 
-<%- include partial/header.ejs %>
-<%- include partial/mainmenu.ejs %>
-
-<div class="clearfix main-container">
-  <%- body %>
-</div>
 <% if (typeof login == "undefined") { %>
 <!-- JS Files not in sails js linker && loaded before Angular -->
-<!--SCRIPTS-->
+<!--SCRIPTS::admin-->
 <script src="/scripts/dependencies/_bower.js"></script>
+<script src="/scripts/templates/admin_templates.js"></script>
 <!--SCRIPTS END-->
 <!-- JS Files not in sails js linker -->
+<script src="/scripts/vendor/ng-file-upload/angular-file-upload.min.js"></script>
 <% } %>
-
-<%- include partial/footer.ejs %>
-<!-- put google analytics here -->
-
 </body>
 </html>

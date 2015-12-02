@@ -16,12 +16,12 @@
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
     'styles/**/*.css',
-    'styles/ninja.css'
+    'styles/cms.css'
 ];
 
 var adminCssFilesToInject = [
     'styles/admin/**/*.css',
-    'styles/ninja.css'
+    'styles/cms.css'
 ];
 
 

@@ -1,0 +1,58 @@
+@media (min-width: 1600px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+.no-gutter [class*="col-"] {
+  padding:0;
+}
+
+.no-gutter-left {
+  padding-left: 0;
+  @include breakpoint(medium) {
+    padding-left: 15px;
+  }
+}
+
+.no-gutter-right {
+  padding-right: 0;
+  @include breakpoint(medium) {
+    padding-right: 15px;
+  }
+}
+
+.gutter-overflow-left {
+  margin-left: -15px;
+  @include breakpoint(medium) {
+    margin-left: auto;
+  }
+}
+
+.edition-container .gutter-overflow-left {
+  margin-left: -11.5px;
+  @include breakpoint(medium) {
+    margin-left: auto;
+  }
+}
+
+.edition-container .no-gutter-left {
+  padding-left: 0 !important;
+  @include breakpoint(medium) {
+    padding-left: 11.5px !important;
+  }
+}
+
+
+.edition-container .no-gutter-right {
+  padding-right: 0 !important;
+  @include breakpoint(medium) {
+    padding-right: 11.5px !important;
+  }
+}
+
+.row.mobile-no-padding {
+  @include breakpoint(mobile) {
+    margin: 0;
+  }
+}

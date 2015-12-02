@@ -1,7 +1,7 @@
 /**
- * NinjaController
+ * CmsController
  *
- * @description :: Server-side logic for managing ninjas
+ * @description :: Server-side logic for managing contents
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 

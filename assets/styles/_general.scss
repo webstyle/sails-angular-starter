@@ -1,0 +1,49 @@
+html {
+  -webkit-tap-highlight-color: rgba(26, 26, 26, 0.3);
+}
+
+html, body, .angular-view {
+  height: 100%; //sticky footer
+  font-size: 18px;
+  line-height: 30px;
+}
+
+#atlwdg-trigger {
+  padding: 7px 11px;
+  box-shadow: none;
+  background-color: $light-red;
+  font-size: 15px;
+  //fix flickering on Safari 7
+  -webkit-backface-visibility: hidden;
+  @include breakpoint(mobile) {
+    display: none;
+  }
+}
+
+#atlwdg-container {
+  @include breakpoint(medium) {
+    width: 100% !important;
+    position: absolute !important;
+    top: 50% !important; left: 0 !important;
+    margin: -271px 0 0 0 !important;
+  }
+}
+
+a.no-decoration {
+  text-decoration: none !important;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 5px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #FFF;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: $light-red;
+  border-radius: 4px;
+}

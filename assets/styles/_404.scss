@@ -1,0 +1,74 @@
+.page-not-found {
+  .page-content {
+    position: relative;
+    padding: 80px 0;
+    background-color: #85BD4A;
+    &:after {
+      content: "";
+      position: absolute;
+      right: 90px; bottom: 0;
+      width: 171px;
+      height: 79px;
+      background: url("/images/microphone-404.png") no-repeat;
+      @include breakpoint(mobile) {
+        right: 0;
+        width: 115px;
+        height: 53px;
+        background-size: 115px 53px;
+      }
+    }
+    @include breakpoint(mobile) {
+      padding: 40px 0;
+    }
+    h1 {
+      color: white;
+      margin-bottom: 70px;
+      @include breakpoint(mobile) {
+        font-size: 32px;
+        margin-bottom: 30px;
+      }
+    }
+    .form-group {
+      position: relative;
+      &:before {
+        content: "\e003";
+        position: absolute;
+        top: 9px; left: 30px;
+        font-size: 30px;
+        font-family: 'Glyphicons Halflings';
+        color: #84BD4A;
+        @include breakpoint(mobile) {
+          font-size: 23px;
+          top: 15px; left: 15px;
+        }
+      }
+    }
+    input {
+      padding: 30px 30px 30px 80px;
+      margin-bottom: 30px;
+      font-size: 22px;
+      color: #5E5E5E;
+      @include font-core-light;
+      @include breakpoint(mobile) {
+        padding: 30px 30px 30px 50px;
+        font-size: 16px;
+      }
+      &::-webkit-input-placeholder {
+        color: #5E5E5E !important;
+        opacity: 1 !important;
+      }
+      &:-moz-placeholder {
+        color: #5E5E5E !important;
+        opacity: 1 !important;
+      }
+      &::-moz-placeholder {
+        color: #5E5E5E !important;
+        opacity: 1 !important;
+      }
+      &:-ms-input-placeholder {
+        color: #5E5E5E !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+}

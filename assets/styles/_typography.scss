@@ -1,0 +1,53 @@
+body {
+  @include font-core;
+}
+
+p, ul, li, a {
+  @include font-core;
+}
+
+a {
+  color: $black;
+  &:hover {
+    color: $black;
+  }
+  &:focus {
+    color: $black;
+    text-decoration: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-core-thin;
+  color: $light-red;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  @include font-core-light;
+  color:$bright-red;
+  font-size: 36px;
+}
+
+h3 {
+  @include font-core-light;
+  color:$black;
+  font-size: 24px;
+}
+
+h4 {
+  @include font-core-bold;
+  color:$black;
+  font-size: 22px;
+}
+
+label {
+  @include font-core-bold;
+}
+
+.font-normal {
+  @include font-core;
+}
